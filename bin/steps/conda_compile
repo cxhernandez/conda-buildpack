@@ -21,3 +21,5 @@ fi
 
 # Clean up the installation environment .
 conda clean -pt --yes > /dev/null
+
+conda remove scikit-learn mdtraj sphinx nose sqlite --yes 
