@@ -7,9 +7,10 @@ if [ ! -d /app/.heroku/miniconda ]; then
     conda install pip --yes | indent
 fi
 
-
 if [ -f conda-requirements.txt ]; then
     puts-step "Installing dependencies using Conda"
+    #Add OmniaMD channel
+    conda config --add channels https://conda.binstar.org/omnia
     conda install --file conda-requirements.txt --yes | indent
 fi
 
@@ -20,6 +21,3 @@ fi
 
 # Clean up the installation environment .
 conda clean -pt --yes > /dev/null
-
-#Add OmniaMD channel
-conda config --add channels https://conda.binstar.org/omnia
