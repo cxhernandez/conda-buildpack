@@ -22,4 +22,4 @@ fi
 # Clean up the installation environment .
 conda clean -pt --yes > /dev/null
 
-conda remove scikit-learn mdtraj sphinx nose sqlite pygments markupsafe decorator hdf5 --yes 
+conda remove scikit-learn mdtraj sphinx nose sqlite pygments markupsafe decorator hdf5 pandas --yes 
