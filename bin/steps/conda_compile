@@ -20,3 +20,6 @@ fi
 
 # Clean up the installation environment .
 conda clean -pt --yes > /dev/null
+
+#Add OmniaMD channel
+conda config --add channels https://conda.binstar.org/omnia
